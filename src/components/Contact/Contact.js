@@ -27,7 +27,7 @@ const Contact = () => {
             <div className="row">
               <div className="col form-group">
               <label for="firstName">First Name*</label>
-                <input type="text" name="firstName" className="form-control" placeholder="First name" ref={register({required: "Required First Name"})}/>
+                <input type="text" name="firstName" className="form-control" placeholder="First name" ref={register({required: "Please provide first name"})}/>
                 <p className="text-danger">{errors.firstName && errors.firstName.message}</p>
               </div>
               <div className="col form-group">
@@ -40,7 +40,7 @@ const Contact = () => {
                 <label for="email">Email*</label>
                 <input name="email" className="form-control" placeholder="Email"
                   ref={register({
-                    required: "Please fill email address",
+                    required: "Please provide email address",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                       message: "invalid email address"
@@ -57,7 +57,7 @@ const Contact = () => {
             <div className="form-group">
               <label for="message">Message*</label>
               <textarea className="form-control" name="message" id="message" rows="3" ref={register({
-                    required: "Required message"
+                    required: "Required provide message"
                   })}></textarea>
                   <p className="text-danger">{errors.message && errors.message.message}</p> 
             </div>
