@@ -1,43 +1,20 @@
 
 import React from 'react';
-import axios from '../../axios';
+import './Home.scss';
 
 class Home extends React.Component {
-   
-   state = {
-      posts: [],
-      selectedPostId: null,
-      error: false
-  }
-
-  componentDidMount () {
-   axios.get( '/posts' )
-       .then( response => {
-           const posts = response.data.slice(0, 4);
-           const updatedPosts = posts.map(post => {
-               return {
-                   ...post,
-                   author: 'Max'
-               }
-           });
-            this.setState({posts: updatedPosts});
-            console.log( this.state.posts );
-       } )
-       .catch(error => {
-           // console.log(error);
-           this.setState({error: true});
-       });
-   }
-
     render() {
        return (
-          <div className="row">
-            <div className="card col-4">
-                <div className="card-body">
-                    This is some text within a card body.
+        <div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h1 className="text-center">Hello. I'm a user interface developer</h1>
+                        <p className="text-center">My name's Dileep. I craft user interfaces using modern frontend web technologies</p>
+                    </div>
                 </div>
             </div>
-          </div>
+        </div>
        )
     }
   }
