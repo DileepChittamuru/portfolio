@@ -41,7 +41,7 @@ class App extends React.Component {
         </div>
         <footer id="main-footer">
           <div class="footer-content container">
-            <p className="text-center">Copyright &copy; 2019. All Rights Reserved</p>
+            <p className="text-center">Copyright &copy; 2020. All Rights Reserved</p>
           </div>
         </footer>
       </div> 
