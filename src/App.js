@@ -22,7 +22,7 @@ class App extends React.Component {
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                   <span class="navbar-toggler-icon"></span>
               </button>
-              <a className="navbar-brand mr-auto" href="./index.html">Dileep Chittamuru</a>
+              <a className="navbar-brand mr-auto" href="./index.html">D C</a>
               <div className="collapse navbar-collapse" id="Navbar">
                   <ul className="navbar-nav ml-auto">
                       <li className="nav-item active"><a class="nav-link" href="./index.html"><span className="fa fa-home fa-lg"></span> Home</a></li>

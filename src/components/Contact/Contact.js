@@ -23,11 +23,11 @@ const Contact = () => {
   return (
       <div>
           <form onSubmit={handleSubmit(onSubmit)} >
-            <h3 className="text-center mb-5">Contact</h3>
+            <h4 className="mb-5">Contact:</h4>
             <div className="row">
               <div className="col form-group">
               <label for="firstName">First Name*</label>
-                <input type="text" name="firstName" className="form-control" placeholder="First name" ref={register({required: "Required"})}/>
+                <input type="text" name="firstName" className="form-control" placeholder="First name" ref={register({required: "Required First Name"})}/>
                 <p className="text-danger">{errors.firstName && errors.firstName.message}</p>
               </div>
               <div className="col form-group">
@@ -57,7 +57,7 @@ const Contact = () => {
             <div className="form-group">
               <label for="message">Message*</label>
               <textarea className="form-control" name="message" id="message" rows="3" ref={register({
-                    required: "Please enter message"
+                    required: "Required message"
                   })}></textarea>
                   <p className="text-danger">{errors.message && errors.message.message}</p> 
             </div>

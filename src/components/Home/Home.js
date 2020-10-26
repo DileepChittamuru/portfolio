@@ -10,7 +10,7 @@ class Home extends React.Component {
                 <div className="row">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <h1 className="text-center">Hello. I'm a user interface developer</h1>
-                        <p className="text-center">My name's Dileep. I craft user interfaces using modern frontend web technologies</p>
+                        <p className="text-center">My name's Dileep Chittamuru. I craft user interfaces using modern frontend web technologies</p>
                     </div>
                 </div>
             </div>
