@@ -7,9 +7,9 @@ export default function Home() {
     const [weight, setWeight] = useState('')
     const [price, setPrice] = useState('')
 
-    let total = useMemo(() => {
-       return  list.reduce((prev, curr) => prev + Number(curr?.price), 0)
-    }, [list])
+    // let total = useMemo(() => {
+    //    return  list.reduce((prev, curr) => prev + Number(curr?.price), 0)
+    // }, [list])
 
     const add = () => {
         setList([...list, {id: nextId++, name: name, weight: weight, price: price}])
