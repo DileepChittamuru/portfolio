@@ -1,35 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
 import App from './App';
-import "./styles.scss";
+import reportWebVitals from './reportWebVitals';
 
-axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
-axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+import './index.css';
 
-axios.interceptors.request.use(request => {
-    console.log(request);
-    // Edit request config
-    return request;
-}, error => {
-    console.log(error);
-    return Promise.reject(error);
-});
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-axios.interceptors.response.use(response => {
-    console.log(response);
-    // Edit request config
-    return response;
-}, error => {
-    console.log(error);
-    return Promise.reject(error);
-});
-
- 
-ReactDOM.render(
-  <App name="ggg"/>,
-  document.getElementById('app')
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
 );
- 
-module.hot.accept();
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
