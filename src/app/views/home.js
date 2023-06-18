@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import {  useState } from "react";
 import Products from "../components/Products";
 let nextId = 1;
 export default function Home() {
