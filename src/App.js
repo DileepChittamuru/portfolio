@@ -4,7 +4,7 @@ import './App.css'
 const social = [
   { name: "GitHub", href: "https://github.com/yourname" },
   { name: "Twitter", href: "https://twitter.com/yourname" },
-  { name: "LinkedIn", href: "https://linkedin.com/in/yourname" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/dileep-chittamuru-021128173/" },
 ];
 
 const projects = [
@@ -17,7 +17,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">Your Name</a>
+        <a className="navbar-brand" href="#">Dileep Chittamuru</a>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
@@ -34,7 +34,7 @@ function Hero() {
   return (
     <section className="py-5 text-center bg-dark text-white">
       <div className="container">
-        <h1 className="display-4">Hi — I’m <span className="text-info">Your Name</span></h1>
+        <h1 className="display-4">Hi — I’m <span className="text-info">Dileep Chittamuru</span></h1>
         <p className="lead">I design and build fast & delightful web apps. I work on front-end systems, UI, and simple APIs.</p>
         <div className="mt-4">
           <a href="#projects" className="btn btn-outline-light me-2">See projects</a>
